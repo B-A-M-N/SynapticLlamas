@@ -52,7 +52,7 @@ def demo_distributed_model():
     print("   • 13B model works on 16GB+ RAM node")
     print("   • 70B model requires 32GB+ RAM on coordinator")
     print("   For true distributed 70B+ support, see funding roadmap:")
-    print("   https://github.com/BenevolentJoker-JohnL/SOLLOL#-future-work-fully-distributed-model-sharding-funding-contingent")
+    print("   https://github.com/B-A-M-N/SOLLOL#-future-work-fully-distributed-model-sharding-funding-contingent")
     print()
 
     # Create client with distributed inference enabled
@@ -158,7 +158,7 @@ def demo_model_comparison():
         {
             "title": "Future: Ray-based Pipeline Parallelism (funding contingent)",
             "models": ["llama2:70b", "llama3.1:405b", "Any size model"],
-            "note": "🚀 True distributed storage + computation. See: https://github.com/BenevolentJoker-JohnL/SOLLOL#-future-work-fully-distributed-model-sharding-funding-contingent"
+            "note": "🚀 True distributed storage + computation. See: https://github.com/B-A-M-N/SOLLOL#-future-work-fully-distributed-model-sharding-funding-contingent"
         }
     ]
 

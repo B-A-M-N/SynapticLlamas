@@ -29,7 +29,7 @@ This project adheres to a Code of Conduct. By participating, you are expected to
    ```
 3. **Add the upstream repository**:
    ```bash
-   git remote add upstream https://github.com/BenevolentJoker-JohnL/SynapticLlamas.git
+   git remote add upstream https://github.com/B-A-M-N/SynapticLlamas.git
    ```
 4. **Create a branch** for your changes:
    ```bash
@@ -369,8 +369,8 @@ Use the feature request template when creating issues.
 If you have questions about contributing:
 
 1. Check existing [documentation](docs/)
-2. Search [existing issues](https://github.com/BenevolentJoker-JohnL/SynapticLlamas/issues)
-3. Ask in [Discussions](https://github.com/BenevolentJoker-JohnL/SynapticLlamas/discussions)
+2. Search [existing issues](https://github.com/B-A-M-N/SynapticLlamas/issues)
+3. Ask in [Discussions](https://github.com/B-A-M-N/SynapticLlamas/discussions)
 4. Contact maintainers
 
 ## License

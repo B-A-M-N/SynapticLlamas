@@ -306,33 +306,30 @@
                 });
             };
 
-            // Ollama Log WebSocket
-            const ollamaWsUrl = `${WS_BASE}/ws/ollama_logs`;
-            let ollamaWs;
+            // Ollama activity WebSocket (unified endpoint)
             const ollamaLogPanel = document.getElementById('ollama-log-panel');
             const connectOllamaLogs = () => {
-                ollamaWs = connectWebSocket(ollamaWsUrl, (event) => {
+                connectWebSocket(`${WS_BASE}/ws/ollama_activity`, (event) => {
                     const data = JSON.parse(event.data);
+                    if (ollamaLogPanel.querySelector('.no-data')) {
+                        ollamaLogPanel.innerHTML = '';
+                    }
                     const logLine = document.createElement('div');
-                    logLine.className = `log-line ${data.level}`;
-
+                    logLine.className = 'log-line';
                     const timestamp = new Date(data.timestamp * 1000).toLocaleTimeString();
-                    const node = data.node.replace('http://', '').replace(':11434', '');
-                    logLine.innerHTML = `<span style="color:#666">[${timestamp}]</span> <span style="color:#9ca3af">[${node}]</span> ${data.message}`;
-
+                    logLine.innerHTML = `<span style="color:#666">[${timestamp}]</span> ${data.message || event.data}`;
                     ollamaLogPanel.appendChild(logLine);
                     ollamaLogPanel.scrollTop = ollamaLogPanel.scrollHeight;
-                    // Keep max 500 lines
                     while (ollamaLogPanel.childElementCount > 500) {
                         ollamaLogPanel.removeChild(ollamaLogPanel.firstChild);
                     }
                 }, () => {
-                    console.log('Ollama Log WebSocket connected.');
+                    console.log('Ollama activity WebSocket connected.');
                     if (ollamaLogPanel.childElementCount === 0) {
-                         ollamaLogPanel.innerHTML = '<div class="no-data">Waiting for Ollama activity...</div>';
+                        ollamaLogPanel.innerHTML = '<div class="no-data">Waiting for Ollama activity...</div>';
                     }
                 }, () => {
-                    console.log('Ollama Log WebSocket disconnected. Reconnecting...');
+                    console.log('Ollama activity WebSocket disconnected. Reconnecting...');
                     setTimeout(connectOllamaLogs, 2000);
                 });
             };

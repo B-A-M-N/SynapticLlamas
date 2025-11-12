@@ -6,7 +6,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/BenevolentJoker-JohnL/SynapticLlamas.git
+git clone https://github.com/B-A-M-N/SynapticLlamas.git
 cd SynapticLlamas
 
 # Start everything (SynapticLlamas + Ollama)
@@ -38,7 +38,7 @@ docker run -it --network host synapticllamas --interactive
 
 ```bash
 # Clone repository
-git clone https://github.com/BenevolentJoker-JohnL/SynapticLlamas.git
+git clone https://github.com/B-A-M-N/SynapticLlamas.git
 cd SynapticLlamas
 
 # Create virtual environment
@@ -226,7 +226,7 @@ SynapticLlamas> ast off
 
 ## 🆘 Getting Help
 
-- GitHub Issues: https://github.com/BenevolentJoker-JohnL/SynapticLlamas/issues
+- GitHub Issues: https://github.com/B-A-M-N/SynapticLlamas/issues
 - Check logs for detailed error messages
 - Use `help` command in interactive mode
 

@@ -435,7 +435,7 @@ cd SynapticLlamas
 pip install -r requirements.txt
 ```
 
-**Note:** SynapticLlamas now uses [SOLLOL](https://github.com/BenevolentJoker-JohnL/SOLLOL) as a package dependency (v0.9.10+) for intelligent routing and distributed inference capabilities.
+**Note:** SynapticLlamas now uses [SOLLOL](https://github.com/B-A-M-N/SOLLOL) as a package dependency (v0.9.10+) for intelligent routing and distributed inference capabilities.
 
 **Prerequisites:**
 - Python 3.8+
@@ -650,7 +650,7 @@ Total time: 3 minutes (consistent)
 
 ## 🔗 Integration with FlockParser & SOLLOL
 
-SynapticLlamas is designed to work seamlessly with **[FlockParser](https://github.com/BenevolentJoker-JohnL/FlockParser)** (document RAG) and **[SOLLOL](https://github.com/BenevolentJoker-JohnL/SOLLOL)** (distributed inference) as a unified AI ecosystem.
+SynapticLlamas is designed to work seamlessly with **[FlockParser](https://github.com/B-A-M-N/FlockParser)** (document RAG) and **[SOLLOL](https://github.com/B-A-M-N/SOLLOL)** (distributed inference) as a unified AI ecosystem.
 
 ### **The Complete Stack**
 
@@ -780,11 +780,11 @@ load_balancer.embed_distributed(model, text)  # Uses SOLLOL + GPU control
 - Intelligent routing under the hood
 - Performance tracking and learning
 
-📚 **[Complete Integration Guide →](https://github.com/BenevolentJoker-JohnL/FlockParser/blob/main/INTEGRATION_WITH_SYNAPTICLLAMAS.md)**
+📚 **[Complete Integration Guide →](https://github.com/B-A-M-N/FlockParser/blob/main/INTEGRATION_WITH_SYNAPTICLLAMAS.md)**
 
 **Related Projects:**
-- **[FlockParser](https://github.com/BenevolentJoker-JohnL/FlockParser)** - Document RAG Intelligence
-- **[SOLLOL](https://github.com/BenevolentJoker-JohnL/SOLLOL)** - Distributed Inference Platform
+- **[FlockParser](https://github.com/B-A-M-N/FlockParser)** - Document RAG Intelligence
+- **[SOLLOL](https://github.com/B-A-M-N/SOLLOL)** - Distributed Inference Platform
 
 ---
 

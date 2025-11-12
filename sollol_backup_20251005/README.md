@@ -49,7 +49,7 @@ SOLLOL (Super Ollama Load balancer & Orchestration Layer) is a production-ready 
 
 ```bash
 # Clone SynapticLlamas
-git clone https://github.com/BenevolentJoker-JohnL/SynapticLlamas.git
+git clone https://github.com/B-A-M-N/SynapticLlamas.git
 cd SynapticLlamas
 
 # Install
@@ -356,4 +356,4 @@ MIT License - see [LICENSE](../LICENSE)
 
 - **SynapticLlamas**: [Main Project](../)
 - **Dashboard**: http://localhost:8080 (when running)
-- **Issues**: [GitHub Issues](https://github.com/BenevolentJoker-JohnL/SynapticLlamas/issues)
+- **Issues**: [GitHub Issues](https://github.com/B-A-M-N/SynapticLlamas/issues)

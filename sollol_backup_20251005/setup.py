@@ -9,16 +9,16 @@ long_description = (this_directory / "README.md").read_text() if (this_directory
 setup(
     name="sollol",
     version="0.3.0",
-    author="BenevolentJoker-JohnL",
+    author="B-A-M-N",
     author_email="benevolentjoker@gmail.com",
     description="Super Ollama Load Balancer with Intelligent Routing and Distributed Inference",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/BenevolentJoker-JohnL/SynapticLlamas",
+    url="https://github.com/B-A-M-N/SynapticLlamas",
     project_urls={
-        "Bug Tracker": "https://github.com/BenevolentJoker-JohnL/SynapticLlamas/issues",
-        "Documentation": "https://github.com/BenevolentJoker-JohnL/SynapticLlamas/blob/main/README.md",
-        "Source Code": "https://github.com/BenevolentJoker-JohnL/SynapticLlamas",
+        "Bug Tracker": "https://github.com/B-A-M-N/SynapticLlamas/issues",
+        "Documentation": "https://github.com/B-A-M-N/SynapticLlamas/blob/main/README.md",
+        "Source Code": "https://github.com/B-A-M-N/SynapticLlamas",
     },
     packages=find_packages(where="."),
     classifiers=[

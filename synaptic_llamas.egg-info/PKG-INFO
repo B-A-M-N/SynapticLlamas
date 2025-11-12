@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: synaptic-llamas
-Version: 0.1.1
+Version: 0.1.2
 Summary: Distributed Parallel AI Agent Orchestration with Intelligent Load Balancing - integrates with FlockParser for RAG and SOLLOL for distributed inference
 Home-page: https://github.com/BenevolentJoker-JohnL/SynapticLlamas
 Author: BenevolentJoker-JohnL
@@ -35,7 +35,7 @@ Requires-Dist: flask-cors
 Requires-Dist: flask-sock
 Requires-Dist: waitress>=3.0.0
 Requires-Dist: asyncio>=3.4.3
-Requires-Dist: sollol>=0.9.31
+Requires-Dist: sollol>=0.9.60
 Requires-Dist: flockparser>=1.0.4
 Provides-Extra: dev
 Requires-Dist: pytest>=7.4.0; extra == "dev"
@@ -89,6 +89,8 @@ response = client.chat("llama3.2", "Summarize quantum computing")
 **This isn't basic load balancing.** This is production-grade intelligent routing with complete observability, working out of the box.
 
 ### 🚀 NEW: llama.cpp Model Sharding - INTEGRATED
+
+> **⚠️ EXPERIMENTAL FEATURE**: Model sharding is currently in experimental stage. While functional for testing and validation, it requires further development and testing for production use. Performance characteristics and reliability are still being evaluated. Use for research and development purposes.
 
 **Run larger models across multiple machines.**
 

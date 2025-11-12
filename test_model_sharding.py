@@ -59,7 +59,7 @@ async def test_model_sharding():
 
     # Note: Using 13B model instead of 70B due to llama.cpp coordinator limitation.
     # The coordinator must load the full model in RAM before distributing computation.
-    # For true distributed 70B+ support, see: https://github.com/BenevolentJoker-JohnL/SOLLOL#-future-work-fully-distributed-model-sharding-funding-contingent
+    # For true distributed 70B+ support, see: https://github.com/B-A-M-N/SOLLOL#-future-work-fully-distributed-model-sharding-funding-contingent
     model = "codellama:13b"
     print(f"🔬 Testing model sharding with: {model}")
     print()

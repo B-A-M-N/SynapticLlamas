@@ -820,7 +820,7 @@ def interactive_mode(model="llama3.2", workers=3, distributed=False, use_dask=Fa
                             model_sharding_enabled = True
                             # Note: Using 13B model instead of 70B due to llama.cpp coordinator limitation.
                             # The coordinator must load the full model in RAM before distributing computation.
-                            # For true distributed 70B+ support, see: https://github.com/BenevolentJoker-JohnL/SOLLOL#-future-work-fully-distributed-model-sharding-funding-contingent
+                            # For true distributed 70B+ support, see: https://github.com/B-A-M-N/SOLLOL#-future-work-fully-distributed-model-sharding-funding-contingent
                             current_model = "codellama:13b"  # Use 13B model for sharding demo
                             synthesis_model = None  # Same model for all phases in sharding-only mode
                             update_config(task_distribution_enabled=False, model_sharding_enabled=True,
@@ -850,7 +850,7 @@ def interactive_mode(model="llama3.2", workers=3, distributed=False, use_dask=Fa
                             current_model = "llama3.2"  # Small model for phases 1-3
                             # Note: Using 13B model instead of 70B due to llama.cpp coordinator limitation.
                             # The coordinator must load the full model in RAM before distributing computation.
-                            # For true distributed 70B+ support, see: https://github.com/BenevolentJoker-JohnL/SOLLOL#-future-work-fully-distributed-model-sharding-funding-contingent
+                            # For true distributed 70B+ support, see: https://github.com/B-A-M-N/SOLLOL#-future-work-fully-distributed-model-sharding-funding-contingent
                             synthesis_model = "codellama:13b"  # 13B model for phase 4
                             update_config(task_distribution_enabled=True, model_sharding_enabled=True,
                                         model="llama3.2", synthesis_model="codellama:13b")

@@ -8,7 +8,7 @@ flask-cors
 flask-sock
 waitress>=3.0.0
 asyncio>=3.4.3
-sollol>=0.9.31
+sollol>=0.9.60
 flockparser>=1.0.4
 
 [dev]
